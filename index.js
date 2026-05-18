@@ -46,8 +46,11 @@ app.get("/", (req, res) => {
 })
 
 app.post("/upload", upload.array("media", 10), (req, res) => {
-  res.send("Yuklandi")
+  res.redirect("/")
 })
+
+
+
 
 
 
